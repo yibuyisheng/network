@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+<context-param>
+	<description>the mongodb's root path.If this param is not specified,the [webapp]\WEB-INF\mongodb directory will become the mongodb root path.</description>
+   	<param-name>mongo-path</param-name>
+   	<param-value>D:\mongodb\</param-value>
+</context-param>
+<context-param>
+	<description>specify if the mongodb is started.If it is not started,then the program will try to start the mongodb</description>
+   	<param-name>mongo-start</param-name>
+   	<param-value>false</param-value>
+</context-param>
+
+  <servlet>
+    <description>the global servlet</description>
+    <display-name>global</display-name>
+    <servlet-name>GlobalServlet</servlet-name>
+    <servlet-class>com.network.GlobalServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GlobalServlet</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

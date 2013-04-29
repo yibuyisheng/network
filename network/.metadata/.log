@@ -1,0 +1,182 @@
+!SESSION 2013-03-17 19:14:35.924 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:13.710
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\css_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:13.954
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\forms_lists_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:13.998
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\htmlform_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:14.107
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:14.172
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\javascript_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:14.226
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\jsf_f_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:14.318
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\jsf_h_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:14.383
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_bean_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:14.520
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:14.612
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_logic_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-03-17 19:15:14.693
+!MESSAGE Installed snippet library: D:\Users\zhangli\MyEclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_tiles_snippets.xml
+!SESSION 2013-04-21 12:14:44.214 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.genuitec.eclipse.core 1 0 2013-04-21 12:17:43.489
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY org.eclipse.ui.workbench 4 2 2013-04-21 12:17:43.529
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:466)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:404)
+	at org.eclipse.swt.widgets.Menu.getItems(Menu.java:492)
+	at org.eclipse.jface.action.MenuManager.getMenuItems(MenuManager.java:693)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:782)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:682)
+	at org.eclipse.ui.internal.menus.WorkbenchMenuService.updateManagers(WorkbenchMenuService.java:330)
+	at org.eclipse.ui.internal.menus.WorkbenchMenuService$3.activityManagerChanged(WorkbenchMenuService.java:292)
+	at org.eclipse.ui.internal.activities.AbstractActivityManager.fireActivityManagerChanged(AbstractActivityManager.java:51)
+	at org.eclipse.ui.internal.activities.ProxyActivityManager$1.activityManagerChanged(ProxyActivityManager.java:50)
+	at org.eclipse.ui.internal.activities.AbstractActivityManager.fireActivityManagerChanged(AbstractActivityManager.java:51)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.updateListeners(MutableActivityManager.java:600)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.setEnabledActivityIds(MutableActivityManager.java:572)
+	at org.eclipse.ui.internal.activities.ws.WorkbenchActivitySupport.setEnabledActivityIds(WorkbenchActivitySupport.java:320)
+	at com.genuitec.myeclipse.perspective.PerspectivePlugin.earlyStartup(PerspectivePlugin.java:139)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:73)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2013-04-21 12:17:43.550
+!MESSAGE Unhandled Exception
+
+!ENTRY com.genuitec.myeclipse.perspective 4 0 2013-04-21 12:17:43.550
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:466)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:404)
+	at org.eclipse.swt.widgets.Menu.getItems(Menu.java:492)
+	at org.eclipse.jface.action.MenuManager.getMenuItems(MenuManager.java:693)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:782)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:682)
+	at org.eclipse.ui.internal.menus.WorkbenchMenuService.updateManagers(WorkbenchMenuService.java:330)
+	at org.eclipse.ui.internal.menus.WorkbenchMenuService$3.activityManagerChanged(WorkbenchMenuService.java:292)
+	at org.eclipse.ui.internal.activities.AbstractActivityManager.fireActivityManagerChanged(AbstractActivityManager.java:51)
+	at org.eclipse.ui.internal.activities.ProxyActivityManager$1.activityManagerChanged(ProxyActivityManager.java:50)
+	at org.eclipse.ui.internal.activities.AbstractActivityManager.fireActivityManagerChanged(AbstractActivityManager.java:51)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.updateListeners(MutableActivityManager.java:600)
+	at org.eclipse.ui.internal.activities.MutableActivityManager.setEnabledActivityIds(MutableActivityManager.java:572)
+	at org.eclipse.ui.internal.activities.ws.WorkbenchActivitySupport.setEnabledActivityIds(WorkbenchActivitySupport.java:320)
+	at com.genuitec.myeclipse.perspective.PerspectivePlugin.earlyStartup(PerspectivePlugin.java:139)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:73)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2013-04-21 12:20:18.494
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.equinox.internal.p2.core.Activator.stop() of bundle org.eclipse.equinox.p2.core.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:791)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:565)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1161)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:595)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:691)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:598)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:390)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: java.lang.IllegalStateException: Attempt to access stopped agent: org.eclipse.equinox.internal.p2.core.ProvisioningAgent@136cd05b
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.checkRunning(ProvisioningAgent.java:85)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:49)
+	at org.eclipse.equinox.internal.p2.garbagecollector.GarbageCollector.stop(GarbageCollector.java:183)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.stop(ProvisioningAgent.java:134)
+	at org.eclipse.equinox.internal.p2.core.Activator.unregisterAgent(Activator.java:218)
+	at org.eclipse.equinox.internal.p2.core.Activator.stop(Activator.java:204)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	... 19 more
+Root exception:
+java.lang.IllegalStateException: Attempt to access stopped agent: org.eclipse.equinox.internal.p2.core.ProvisioningAgent@136cd05b
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.checkRunning(ProvisioningAgent.java:85)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:49)
+	at org.eclipse.equinox.internal.p2.garbagecollector.GarbageCollector.stop(GarbageCollector.java:183)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.stop(ProvisioningAgent.java:134)
+	at org.eclipse.equinox.internal.p2.core.Activator.unregisterAgent(Activator.java:218)
+	at org.eclipse.equinox.internal.p2.core.Activator.stop(Activator.java:204)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:565)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1161)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:595)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:691)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:598)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:390)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SESSION 2013-04-29 16:57:20.072 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.genuitec.eclipse.core 1 0 2013-04-29 16:58:59.421
+!MESSAGE Unable to locate .myeclipse.properties file

@@ -1,0 +1,713 @@
+Thread:main  javax.servlet.GenericServlet[212] 2013-03-03 09:49:54 星期日 [INFO] network init start
+Thread:main  com.network.manage.db.DBManager[44] 2013-03-03 09:49:54 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:57 星期日 [INFO] Sun Mar 03 09:49:57 [initandlisten] MongoDB starting : pid=3360 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:57 星期日 [INFO] Sun Mar 03 09:49:57 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:57 星期日 [INFO] Sun Mar 03 09:49:57 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:57 星期日 [INFO] Sun Mar 03 09:49:57 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:57 星期日 [INFO] Sun Mar 03 09:49:57 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:57 星期日 [INFO] Sun Mar 03 09:49:57 [initandlisten] journal dir=H:/mongodb/data/journal
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:57 星期日 [INFO] Sun Mar 03 09:49:57 [initandlisten] recover : no journal files present, no recovery needed
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:59 星期日 [INFO] Sun Mar 03 09:49:59 [initandlisten] query network.system.namespaces query: { options.temp: { $in: [ true, 1 ] } } ntoreturn:0 ntoskip:0 nscanned:5 keyUpdates:0  nreturned:0 reslen:20 137ms
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:59 星期日 [INFO] Sun Mar 03 09:49:59 [websvr] admin web console waiting for connections on port 28017
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:49:59 星期日 [INFO] Sun Mar 03 09:49:59 [initandlisten] waiting for connections on port 27017
+Thread:main  com.network.manage.Manager[19] 2013-03-03 09:49:59 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:main  com.network.manage.Manager[19] 2013-03-03 09:49:59 星期日 [INFO] the name of the db is network!
+Thread:main  com.network.manage.db.DBManager[62] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:main  com.network.manage.db.DBManager[62] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:main  com.network.GlobalServlet[65] 2013-03-03 09:49:59 星期日 [INFO] logic begin
+Thread:main  com.network.manage.logic.LogicManager[33] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:main  com.network.manage.logic.LogicManager[33] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:main  com.network.GlobalServlet[65] 2013-03-03 09:49:59 星期日 [INFO] logic end
+Thread:main  com.network.GlobalServlet[65] 2013-03-03 09:49:59 星期日 [INFO] dealer begin
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-03 09:49:59 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:main  com.network.GlobalServlet[65] 2013-03-03 09:49:59 星期日 [INFO] dealer end
+Thread:main  javax.servlet.GenericServlet[212] 2013-03-03 09:49:59 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:50:15 星期日 [INFO] Sun Mar 03 09:50:15 [initandlisten] connection accepted from 127.0.0.1:25926 #1 (1 connection now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:50:59 星期日 [INFO] Sun Mar 03 09:50:59 [PeriodicTask::Runner] task: WriteBackManager::cleaner took: 31ms
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:51:49 星期日 [INFO] Sun Mar 03 09:51:49 [initandlisten] connection accepted from 127.0.0.1:25945 #2 (2 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:51:50 星期日 [INFO] Sun Mar 03 09:51:50 [conn2] query network.document query: { _id: ObjectId('5132047b9f6018be65971965') } ntoreturn:1 idhack:1 keyUpdates:0 locks(micros) r:278685 reslen:4353 278ms
+Thread:http-8080-6  com.network.dealer.user.UserDealer[103] 2013-03-03 09:55:17 星期日 [INFO] {status:0,msg:"请输入昵称"}
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[249] 2013-03-03 09:55:17 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\images\armor.png
+Thread:http-8080-6  com.network.dealer.user.UserDealer[103] 2013-03-03 09:55:20 星期日 [INFO] {status:0,msg:"请输入昵称"}
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[249] 2013-03-03 09:55:20 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\images\armor.png
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:58:29 星期日 [INFO] Sun Mar 03 09:58:29 [initandlisten] connection accepted from 127.0.0.1:26028 #3 (3 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:59:39 星期日 [INFO] Sun Mar 03 09:59:39 [initandlisten] connection accepted from 127.0.0.1:26043 #4 (4 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 09:59:49 星期日 [INFO] Sun Mar 03 09:59:49 [initandlisten] connection accepted from 127.0.0.1:26044 #5 (5 connections now open)
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 10:08:21 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 10:08:21 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 10:08:21 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 10:08:21 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 10:08:22 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 10:08:23 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] MongoDB starting : pid=12244 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 dbexit: 
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] shutdown: final commit...
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] shutdown: closing all files...
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 [initandlisten] closeAllFiles() finished
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] Sun Mar 03 10:08:23 dbexit: really exiting now
+Thread:Thread-17  java.lang.Thread[722] 2013-03-03 10:08:23 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 10:08:23 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 10:08:23 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 10:08:23 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 10:08:23 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 10:08:23 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 10:08:23 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 10:08:23 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 10:08:23 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:08:27 星期日 [INFO] Sun Mar 03 10:08:27 [initandlisten] connection accepted from 127.0.0.1:26085 #6 (6 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:08:51 星期日 [INFO] Sun Mar 03 10:08:51 [initandlisten] connection accepted from 127.0.0.1:26092 #7 (7 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:11:00 星期日 [INFO] Sun Mar 03 10:11:00 [initandlisten] connection accepted from 127.0.0.1:26111 #8 (8 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:24:17 星期日 [INFO] Sun Mar 03 10:24:17 [initandlisten] connection accepted from 127.0.0.1:26249 #9 (9 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:24:21 星期日 [INFO] Sun Mar 03 10:24:21 [initandlisten] connection accepted from 127.0.0.1:26250 #10 (10 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:26:14 星期日 [INFO] Sun Mar 03 10:26:14 [initandlisten] connection accepted from 127.0.0.1:26267 #11 (11 connections now open)
+Thread:http-8080-4  com.network.dealer.user.UserDealer[103] 2013-03-03 10:27:14 星期日 [INFO] {status:0,msg:"请输入昵称"}
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:32:13 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[257] 2013-03-03 10:33:13 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\fakeobjects\images\spacer.gif
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:33:13 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\flash\images\placeholder.png
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[107] 2013-03-03 10:33:23 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-2  com.network.dealer.user.UserDealer[101] 2013-03-03 10:33:30 星期日 [INFO] {status:1}
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[128] 2013-03-03 10:33:40 星期日 [INFO] {status:1}
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[115] 2013-03-03 10:33:42 星期日 [INFO] {status:0,msg:"已经存在相同标题的文章了，换个试试吧！"}
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:33:42 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\images\armor.png
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:34:59 星期日 [INFO] Sun Mar 03 10:34:59 [initandlisten] connection accepted from 127.0.0.1:26731 #12 (12 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:34:59 星期日 [INFO] Sun Mar 03 10:34:59 [conn12] end connection 127.0.0.1:26731 (11 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:02 星期日 [INFO] Sun Mar 03 10:35:02 [initandlisten] connection accepted from 127.0.0.1:26732 #13 (12 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:02 星期日 [INFO] Sun Mar 03 10:35:02 [conn13] end connection 127.0.0.1:26732 (11 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:06 星期日 [INFO] Sun Mar 03 10:35:06 [initandlisten] connection accepted from 127.0.0.1:26733 #14 (12 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:06 星期日 [INFO] Sun Mar 03 10:35:06 [conn14] end connection 127.0.0.1:26733 (11 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:06 星期日 [INFO] Sun Mar 03 10:35:06 [initandlisten] connection accepted from 127.0.0.1:26734 #15 (12 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:06 星期日 [INFO] Sun Mar 03 10:35:06 [conn15] end connection 127.0.0.1:26734 (11 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:06 星期日 [INFO] Sun Mar 03 10:35:06 [initandlisten] connection accepted from 127.0.0.1:26735 #16 (12 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:06 星期日 [INFO] Sun Mar 03 10:35:06 [conn16] end connection 127.0.0.1:26735 (11 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:11 星期日 [INFO] Sun Mar 03 10:35:11 [initandlisten] connection accepted from 127.0.0.1:26736 #17 (12 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:35:11 星期日 [INFO] Sun Mar 03 10:35:11 [conn17] end connection 127.0.0.1:26736 (11 connections now open)
+Thread:http-8080-3  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:39:00 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-3  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:39:02 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[161] 2013-03-03 10:39:03 星期日 [INFO] {status:1}
+Thread:http-8080-1  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:39:06 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-1  com.network.dealer.document.DocumentDealer[161] 2013-03-03 10:39:07 星期日 [INFO] {status:1}
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:39:47 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:39:59 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:39:59 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:40:03 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-5  com.network.dealer.document.DocumentDealer[128] 2013-03-03 10:40:05 星期日 [INFO] {status:1}
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:40:37 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[257] 2013-03-03 10:40:51 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\fakeobjects\images\spacer.gif
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:40:51 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\iframe\images\placeholder.png
+Thread:http-8080-6  com.network.dealer.document.DocumentDealer[128] 2013-03-03 10:40:54 星期日 [INFO] {status:1}
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:41:20 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:41:29 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:41:29 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-6  com.network.manage.dealer.DealerManager[257] 2013-03-03 10:41:30 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\fakeobjects\images\spacer.gif
+Thread:http-8080-6  com.network.dealer.document.DocumentDealer[128] 2013-03-03 10:41:33 星期日 [INFO] {status:1}
+Thread:http-8080-3  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:42:18 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-3  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:42:18 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-3  com.network.manage.dealer.DealerManager[257] 2013-03-03 10:42:33 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\fakeobjects\images\spacer.gif
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[128] 2013-03-03 10:42:37 星期日 [INFO] {status:1}
+Thread:http-8080-3  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:42:56 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[161] 2013-03-03 10:43:07 星期日 [INFO] {status:1}
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[257] 2013-03-03 10:44:12 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\fakeobjects\images\spacer.gif
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[128] 2013-03-03 10:44:16 星期日 [INFO] {status:1}
+Thread:http-8080-1  com.network.dealer.document.DocumentDealer[128] 2013-03-03 10:45:36 星期日 [INFO] {status:1}
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:49:04 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\icons.png
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:49:05 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:49:05 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:50:34 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\icons.png
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:50:34 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:52:33 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[249] 2013-03-03 10:52:34 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\plugins\magicline\images\icon.png
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[128] 2013-03-03 10:53:30 星期日 [INFO] {status:1}
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 10:53:39 星期日 [INFO] Sun Mar 03 10:53:39 [initandlisten] connection accepted from 127.0.0.1:27941 #18 (12 connections now open)
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[233] 2013-03-03 11:11:49 星期日 [ERROR] file path:H:\graduation design\network\WebRoot\document\avalaible.ftl
+ Expression servertime is undefined on line 26, column 127 in document/avalaible.ftl.
+        freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125)
+        freemarker.core.Expression.getStringValue(Expression.java:118)
+        freemarker.core.Expression.getStringValue(Expression.java:93)
+        freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+        freemarker.core.Environment.visit(Environment.java:221)
+        freemarker.core.MixedContent.accept(MixedContent.java:92)
+        freemarker.core.Environment.visit(Environment.java:221)
+        freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:179)
+        freemarker.core.Environment.visit(Environment.java:428)
+        freemarker.core.IteratorBlock.accept(IteratorBlock.java:102)
+        freemarker.core.Environment.visit(Environment.java:221)
+        freemarker.core.MixedContent.accept(MixedContent.java:92)
+        freemarker.core.Environment.visit(Environment.java:221)
+        freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:79)
+        freemarker.core.Environment.visit(Environment.java:221)
+        freemarker.core.MixedContent.accept(MixedContent.java:92)
+        freemarker.core.Environment.visit(Environment.java:221)
+        freemarker.core.Environment.process(Environment.java:199)
+        freemarker.template.Template.process(Template.java:259)
+        com.network.manage.dealer.DealerManager._responseWithXml(DealerManager.java:141)
+        com.network.manage.dealer.DealerManager.response(DealerManager.java:233)
+        com.network.GlobalServlet.doGet(GlobalServlet.java:47)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+        org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+        org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+        org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+        org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+        org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+        org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+        org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+        org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+        org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+        org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+        org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+        java.lang.Thread.run(Thread.java:722)
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 11:17:25 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 11:17:25 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 11:17:25 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 11:17:25 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 11:17:26 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 11:17:27 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] MongoDB starting : pid=10196 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 dbexit: 
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] shutdown: final commit...
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] shutdown: closing all files...
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 [initandlisten] closeAllFiles() finished
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] Sun Mar 03 11:17:27 dbexit: really exiting now
+Thread:Thread-22  java.lang.Thread[722] 2013-03-03 11:17:27 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 11:17:27 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 11:17:27 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 11:17:27 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 11:17:27 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 11:17:27 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 11:17:27 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 11:17:27 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 11:17:27 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 11:17:27 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:17:28 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:17:28 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:17:28 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:17:28 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:17:28 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:17:28 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 11:17:28 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 11:17:28 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 11:17:31 星期日 [INFO] Sun Mar 03 11:17:31 [initandlisten] connection accepted from 127.0.0.1:28223 #19 (13 connections now open)
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 11:20:08 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 11:20:08 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 11:20:08 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 11:20:08 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 11:20:08 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 11:20:09 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] MongoDB starting : pid=13216 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 dbexit: 
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] shutdown: final commit...
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] shutdown: closing all files...
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 [initandlisten] closeAllFiles() finished
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] Sun Mar 03 11:20:09 dbexit: really exiting now
+Thread:Thread-25  java.lang.Thread[722] 2013-03-03 11:20:09 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 11:20:09 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 11:20:09 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 11:20:09 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 11:20:09 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 11:20:09 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 11:20:09 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 11:20:09 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 11:20:09 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 11:20:13 星期日 [INFO] Sun Mar 03 11:20:13 [initandlisten] connection accepted from 127.0.0.1:28357 #20 (14 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 11:20:26 星期日 [INFO] Sun Mar 03 11:20:26 [initandlisten] connection accepted from 127.0.0.1:28368 #21 (15 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 11:20:49 星期日 [INFO] Sun Mar 03 11:20:49 [initandlisten] connection accepted from 127.0.0.1:28372 #22 (16 connections now open)
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 13:13:02 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 13:13:02 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 13:13:02 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 13:13:02 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:13:02 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 13:13:03 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] MongoDB starting : pid=3916 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 dbexit: 
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] shutdown: final commit...
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] shutdown: closing all files...
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 [initandlisten] closeAllFiles() finished
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] Sun Mar 03 13:13:04 dbexit: really exiting now
+Thread:Thread-28  java.lang.Thread[722] 2013-03-03 13:13:04 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:13:05 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:13:05 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:13:05 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:13:05 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:13:05 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:13:05 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:13:05 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:13:05 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:13:10 星期日 [INFO] Sun Mar 03 13:13:10 [initandlisten] connection accepted from 127.0.0.1:29085 #23 (17 connections now open)
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[57] 2013-03-03 13:13:10 星期日 [ERROR]  null
+        sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        java.lang.reflect.Method.invoke(Method.java:601)
+        com.network.dealer.Dealer.invokeDealMethod(Dealer.java:83)
+        com.network.dealer.document.DocumentDealer.dealHttp(DocumentDealer.java:57)
+        com.network.dealer.Dealer.deal(Dealer.java:51)
+        com.network.GlobalServlet.doGet(GlobalServlet.java:47)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+        org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+        org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+        org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+        org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+        org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+        org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+        org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+        org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+        org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+        org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+        org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+        java.lang.Thread.run(Thread.java:722)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:13:10 星期日 [INFO] Sun Mar 03 13:13:10 [conn23] assertion 10105 bad skip value in query ns:network.document query:{ query: { status: 2 }, orderby: { upload_time: -1 } }
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:13:10 星期日 [INFO] Sun Mar 03 13:13:10 [conn23]  ntoskip:-1 ntoreturn:3
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:13:10 星期日 [INFO] Sun Mar 03 13:13:10 [conn23] problem detected during query over network.document : { $err: "bad skip value in query", code: 10105 }
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 13:15:05 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 13:15:05 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 13:15:05 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 13:15:05 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:15:06 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 13:15:06 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] MongoDB starting : pid=9024 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 dbexit: 
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] shutdown: final commit...
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] shutdown: closing all files...
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 [initandlisten] closeAllFiles() finished
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] Sun Mar 03 13:15:06 dbexit: really exiting now
+Thread:Thread-31  java.lang.Thread[722] 2013-03-03 13:15:06 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:15:06 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:15:06 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:15:06 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:15:07 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:15:07 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:15:07 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:15:07 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:15:07 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:15:07 星期日 [INFO] init successfully!
+Thread:http-8080-3  sun.reflect.NativeMethodAccessorImpl[-2] 2013-03-03 13:15:09 星期日 [INFO] -------pageIndex:1
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:15:09 星期日 [INFO] Sun Mar 03 13:15:09 [initandlisten] connection accepted from 127.0.0.1:29104 #24 (18 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:15:09 星期日 [INFO] Sun Mar 03 13:15:09 [conn24] assertion 10105 bad skip value in query ns:network.document query:{ query: { status: 2 }, orderby: { upload_time: -1 } }
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[57] 2013-03-03 13:15:09 星期日 [ERROR]  null
+        sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        java.lang.reflect.Method.invoke(Method.java:601)
+        com.network.dealer.Dealer.invokeDealMethod(Dealer.java:83)
+        com.network.dealer.document.DocumentDealer.dealHttp(DocumentDealer.java:57)
+        com.network.dealer.Dealer.deal(Dealer.java:51)
+        com.network.GlobalServlet.doGet(GlobalServlet.java:47)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+        org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+        org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+        org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+        org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+        org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+        org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+        org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+        org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+        org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+        org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+        org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+        java.lang.Thread.run(Thread.java:722)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:15:09 星期日 [INFO] Sun Mar 03 13:15:09 [conn24]  ntoskip:-1 ntoreturn:3
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:15:09 星期日 [INFO] Sun Mar 03 13:15:09 [conn24] problem detected during query over network.document : { $err: "bad skip value in query", code: 10105 }
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 13:18:07 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 13:18:07 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 13:18:07 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 13:18:07 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:18:07 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 13:18:07 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] MongoDB starting : pid=3552 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 dbexit: 
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] shutdown: final commit...
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] shutdown: closing all files...
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 [initandlisten] closeAllFiles() finished
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] Sun Mar 03 13:18:08 dbexit: really exiting now
+Thread:Thread-34  java.lang.Thread[722] 2013-03-03 13:18:08 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:18:08 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:18:08 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:18:08 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:18:08 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:18:08 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:18:08 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:18:08 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:18:08 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:18:09 星期日 [INFO] Sun Mar 03 13:18:09 [initandlisten] connection accepted from 127.0.0.1:29126 #25 (19 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:18:15 星期日 [INFO] Sun Mar 03 13:18:15 [initandlisten] connection accepted from 127.0.0.1:29127 #26 (20 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:18:23 星期日 [INFO] Sun Mar 03 13:18:23 [initandlisten] connection accepted from 127.0.0.1:29140 #27 (21 connections now open)
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[57] 2013-03-03 13:28:40 星期日 [ERROR]  null
+        sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        java.lang.reflect.Method.invoke(Method.java:601)
+        com.network.dealer.Dealer.invokeDealMethod(Dealer.java:83)
+        com.network.dealer.document.DocumentDealer.dealHttp(DocumentDealer.java:57)
+        com.network.dealer.Dealer.deal(Dealer.java:51)
+        com.network.GlobalServlet.doGet(GlobalServlet.java:47)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+        org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+        org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+        org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+        org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+        org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+        org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+        org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+        org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+        org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+        org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+        org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+        java.lang.Thread.run(Thread.java:722)
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 13:29:08 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 13:29:08 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 13:29:08 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 13:29:08 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:29:09 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 13:29:09 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] MongoDB starting : pid=14220 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 dbexit: 
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] shutdown: final commit...
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] shutdown: closing all files...
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 [initandlisten] closeAllFiles() finished
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] Sun Mar 03 13:29:09 dbexit: really exiting now
+Thread:Thread-37  java.lang.Thread[722] 2013-03-03 13:29:09 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:29:09 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:29:09 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:29:09 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:29:09 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:29:09 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:29:09 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:29:09 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:29:09 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:29:11 星期日 [INFO] Sun Mar 03 13:29:11 [initandlisten] connection accepted from 127.0.0.1:29196 #28 (22 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:29:48 星期日 [INFO] Sun Mar 03 13:29:48 [initandlisten] connection accepted from 127.0.0.1:29202 #29 (23 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:29:48 星期日 [INFO] Sun Mar 03 13:29:48 [conn29] end connection 127.0.0.1:29202 (22 connections now open)
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 13:30:09 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 13:30:09 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 13:30:09 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 13:30:09 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:30:10 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 13:30:10 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] MongoDB starting : pid=16584 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 dbexit: 
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] shutdown: final commit...
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] shutdown: closing all files...
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 [initandlisten] closeAllFiles() finished
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] Sun Mar 03 13:30:10 dbexit: really exiting now
+Thread:Thread-40  java.lang.Thread[722] 2013-03-03 13:30:10 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:30:11 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 13:30:11 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:30:11 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:30:11 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:30:11 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 13:30:11 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 13:30:11 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 13:30:11 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:30:16 星期日 [INFO] Sun Mar 03 13:30:16 [initandlisten] connection accepted from 127.0.0.1:29209 #30 (23 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:30:18 星期日 [INFO] Sun Mar 03 13:30:18 [initandlisten] connection accepted from 127.0.0.1:29211 #31 (24 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:35:50 星期日 [INFO] Sun Mar 03 13:35:50 [initandlisten] connection accepted from 127.0.0.1:29250 #32 (25 connections now open)
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[249] 2013-03-03 13:48:38 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[108] 2013-03-03 13:48:42 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[108] 2013-03-03 13:48:45 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[108] 2013-03-03 13:48:47 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-2  com.network.dealer.user.UserDealer[103] 2013-03-03 13:48:48 星期日 [INFO] {status:0,msg:"请输入昵称"}
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[249] 2013-03-03 13:48:48 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\images\armor.png
+Thread:http-8080-3  com.network.manage.dealer.DealerManager[249] 2013-03-03 13:50:07 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-3  com.network.manage.dealer.DealerManager[249] 2013-03-03 13:51:31 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[108] 2013-03-03 13:51:33 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[108] 2013-03-03 13:51:37 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[108] 2013-03-03 13:51:40 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-3  com.network.dealer.document.DocumentDealer[108] 2013-03-03 13:51:41 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:51:45 星期日 [INFO] Sun Mar 03 13:51:45 [initandlisten] connection accepted from 127.0.0.1:29388 #33 (26 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 13:56:17 星期日 [INFO] Sun Mar 03 13:56:17 [initandlisten] connection accepted from 127.0.0.1:29417 #34 (27 connections now open)
+Thread:http-8080-2  com.network.manage.dealer.DealerManager[249] 2013-03-03 14:02:34 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[108] 2013-03-03 14:02:36 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[108] 2013-03-03 14:02:39 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-8  com.network.manage.dealer.DealerManager[249] 2013-03-03 14:02:52 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-8  com.network.dealer.document.DocumentDealer[108] 2013-03-03 14:02:53 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-8  com.network.dealer.document.DocumentDealer[108] 2013-03-03 14:02:55 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-8  com.network.dealer.user.UserDealer[103] 2013-03-03 14:02:56 星期日 [INFO] {status:0,msg:"请输入昵称"}
+Thread:http-8080-8  com.network.manage.dealer.DealerManager[249] 2013-03-03 14:02:56 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\images\armor.png
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 14:03:00 星期日 [INFO] Sun Mar 03 14:03:00 [initandlisten] connection accepted from 127.0.0.1:29473 #35 (28 connections now open)
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 14:04:52 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 14:04:52 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 14:04:52 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 14:04:52 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 14:04:52 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 14:04:52 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] MongoDB starting : pid=7124 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 dbexit: 
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] shutdown: final commit...
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] shutdown: closing all files...
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 [initandlisten] closeAllFiles() finished
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] Sun Mar 03 14:04:53 dbexit: really exiting now
+Thread:Thread-43  java.lang.Thread[722] 2013-03-03 14:04:53 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 14:04:53 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 14:04:53 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 14:04:53 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 14:04:53 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 14:04:53 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 14:04:53 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 14:04:53 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 14:04:53 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 14:04:55 星期日 [INFO] Sun Mar 03 14:04:55 [initandlisten] connection accepted from 127.0.0.1:29494 #36 (29 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 14:05:15 星期日 [INFO] Sun Mar 03 14:05:15 [initandlisten] connection accepted from 127.0.0.1:29495 #37 (30 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 14:05:19 星期日 [INFO] Sun Mar 03 14:05:19 [initandlisten] connection accepted from 127.0.0.1:29498 #38 (31 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 14:05:29 星期日 [INFO] Sun Mar 03 14:05:29 [initandlisten] connection accepted from 127.0.0.1:29501 #39 (32 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 14:11:25 星期日 [INFO] Sun Mar 03 14:11:25 [initandlisten] connection accepted from 127.0.0.1:29565 #40 (33 connections now open)
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[57] 2013-03-03 17:04:07 星期日 [ERROR]  null
+        sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        java.lang.reflect.Method.invoke(Method.java:601)
+        com.network.dealer.Dealer.invokeDealMethod(Dealer.java:83)
+        com.network.dealer.document.DocumentDealer.dealHttp(DocumentDealer.java:57)
+        com.network.dealer.Dealer.deal(Dealer.java:51)
+        com.network.GlobalServlet.doGet(GlobalServlet.java:47)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+        org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+        org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+        org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+        org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+        org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+        org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+        org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+        org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+        org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+        org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+        org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+        java.lang.Thread.run(Thread.java:722)
+Thread:http-8080-2  com.network.dealer.document.DocumentDealer[57] 2013-03-03 17:04:12 星期日 [ERROR]  null
+        sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        java.lang.reflect.Method.invoke(Method.java:601)
+        com.network.dealer.Dealer.invokeDealMethod(Dealer.java:83)
+        com.network.dealer.document.DocumentDealer.dealHttp(DocumentDealer.java:57)
+        com.network.dealer.Dealer.deal(Dealer.java:51)
+        com.network.GlobalServlet.doGet(GlobalServlet.java:47)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+        javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+        org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+        org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+        org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+        org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+        org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+        org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+        org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+        org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+        org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+        org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+        org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+        java.lang.Thread.run(Thread.java:722)
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[27] 2013-03-03 17:05:06 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[19] 2013-03-03 17:05:06 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[270] 2013-03-03 17:05:06 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 17:05:06 星期日 [INFO] system exit successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 17:05:06 星期日 [INFO] network init start
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[44] 2013-03-03 17:05:07 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] MongoDB starting : pid=6096 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: H:\mongodb\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 dbexit: 
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] shutdown: going to close listening sockets...
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] shutdown: going to flush diaglog...
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] shutdown: going to close sockets...
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] shutdown: waiting for fs preallocator...
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] shutdown: lock for final commit...
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] shutdown: final commit...
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] shutdown: closing all files...
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 [initandlisten] closeAllFiles() finished
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] Sun Mar 03 17:05:07 dbexit: really exiting now
+Thread:Thread-46  java.lang.Thread[722] 2013-03-03 17:05:07 星期日 [INFO] mongodb end !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 17:05:07 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.Manager[19] 2013-03-03 17:05:07 星期日 [INFO] the name of the db is network!
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.db.DBManager[62] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 17:05:07 星期日 [INFO] logic begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.logic.LogicManager[33] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 17:05:07 星期日 [INFO] logic end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 17:05:07 星期日 [INFO] dealer begin
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.manage.dealer.DealerManager[281] 2013-03-03 17:05:07 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  com.network.GlobalServlet[65] 2013-03-03 17:05:07 星期日 [INFO] dealer end
+Thread:ContainerBackgroundProcessor[StandardEngine[Catalina]]  javax.servlet.GenericServlet[212] 2013-03-03 17:05:07 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 17:05:10 星期日 [INFO] Sun Mar 03 17:05:10 [initandlisten] connection accepted from 127.0.0.1:30400 #41 (34 connections now open)
+Thread:Thread-2  java.lang.Thread[722] 2013-03-03 17:05:43 星期日 [INFO] Sun Mar 03 17:05:43 [initandlisten] connection accepted from 127.0.0.1:30412 #42 (35 connections now open)
+Thread:main  com.network.manage.db.DBManager[27] 2013-03-03 17:11:04 星期日 [INFO] destroy com.network.db.impl.DocumentDBImpl successfully ! priority : 0
+Thread:main  com.network.manage.logic.LogicManager[19] 2013-03-03 17:11:04 星期日 [INFO] destroy com.network.logic.document.DocumentLogic successfully ! priority : 0
+Thread:main  com.network.manage.dealer.DealerManager[270] 2013-03-03 17:11:04 星期日 [INFO] destroy com.network.dealer.document.DocumentDealer successfully ! priority : 0
+Thread:main  org.apache.catalina.core.StandardWrapper[1436] 2013-03-03 17:11:04 星期日 [INFO] system exit successfully!

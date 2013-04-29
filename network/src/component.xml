@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+    <dbs>
+        <db class="com.network.db.impl.UserDBImpl"/>
+        <db class="com.network.db.impl.DocumentDBImpl"/>
+        <db class="com.network.db.impl.ChapterDBImpl"/>
+        <db class="com.network.db.impl.PostsDBImpl"/>
+    </dbs>
+    <dealers>
+        <dealer class="com.network.dealer.static_resource.StaticResourceDealer" path="/static/*"/>
+        <dealer class="com.network.dealer.page.PageDealer" path="/page/*"/>
+        <dealer class="com.network.dealer.DefaultDealer" path="/default/*"/>
+        <dealer class="com.network.dealer.user.UserDealer" path="/uc/*"/>
+        <dealer class="com.network.dealer.document.DocumentDealer" path="/doc/*"/>
+        <dealer class="com.network.dealer.manage_center.ManageDealer" path="/mc/*"/>
+        <dealer class="com.network.dealer.chapter.ChapterDealer" path="/chapter/*"/>
+        <dealer class="com.network.dealer.forum.PostsDealer" path="/posts/*"/>
+    </dealers>
+    <logics>
+        <logic class="com.network.logic.user.UserLogic"/>
+        <logic class="com.network.logic.document.DocumentLogic"/>
+        <logic class="com.network.logic.chapter.ChapterLogic"/>
+        <logic class="com.network.logic.forum.PostsLogic"/>
+    </logics>
+</network>

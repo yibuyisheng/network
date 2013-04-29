@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Connector resourceType="${resource_type}">
+    <Error number="${error_number}" />
+    <CurrentFolder path="${current_folder_path}" url="${current_folder_url}" acl="${current_folder_acl}" />
+    <#if files??>
+    	<Files>
+    	    <#list files as file>
+    	    	<File name="${file.name}" date="${file.date}" thumb="${file.thumb}" size="${file.size}" />
+    	    </#list>
+    	</Files>
+    </#if>
+</Connector>

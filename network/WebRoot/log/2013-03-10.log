@@ -1,0 +1,35 @@
+Thread:main  javax.servlet.GenericServlet[212] 2013-03-10 10:56:50 星期日 [INFO] network init start
+Thread:main  com.network.manage.db.DBManager[44] 2013-03-10 10:56:51 星期日 [INFO] H:\mongodb\bin\mongod.exe -dbpath H:\mongodb\data\
+Thread:main  com.network.manage.Manager[19] 2013-03-10 10:56:51 星期日 [INFO] connected to mongodb on localhost:27017 successfully!
+Thread:main  com.network.manage.Manager[19] 2013-03-10 10:56:51 星期日 [INFO] the name of the db is network!
+Thread:main  com.network.manage.db.DBManager[62] 2013-03-10 10:56:51 星期日 [INFO] initialize com.network.db.impl.UserDBImpl successfully !
+Thread:main  com.network.manage.db.DBManager[62] 2013-03-10 10:56:51 星期日 [INFO] initialize com.network.db.impl.DocumentDBImpl successfully !
+Thread:main  com.network.GlobalServlet[65] 2013-03-10 10:56:51 星期日 [INFO] logic begin
+Thread:main  com.network.manage.logic.LogicManager[33] 2013-03-10 10:56:51 星期日 [INFO] initialize com.network.logic.user.UserLogic successfully !
+Thread:main  com.network.manage.logic.LogicManager[33] 2013-03-10 10:56:52 星期日 [INFO] initialize com.network.logic.document.DocumentLogic successfully !
+Thread:main  com.network.GlobalServlet[65] 2013-03-10 10:56:52 星期日 [INFO] logic end
+Thread:main  com.network.GlobalServlet[65] 2013-03-10 10:56:52 星期日 [INFO] dealer begin
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-10 10:56:52 星期日 [INFO] initialize com.network.dealer.user.UserDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-10 10:56:52 星期日 [INFO] initialize com.network.dealer.DefaultDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-10 10:56:52 星期日 [INFO] initialize com.network.dealer.page.PageDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-10 10:56:52 星期日 [INFO] initialize com.network.dealer.static_resource.StaticResourceDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-10 10:56:52 星期日 [INFO] initialize com.network.dealer.manage_center.ManageDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-10 10:56:52 星期日 [INFO] initialize com.network.dealer.chapter.ChapterDealer successfully !
+Thread:main  com.network.manage.dealer.DealerManager[281] 2013-03-10 10:56:52 星期日 [INFO] initialize com.network.dealer.document.DocumentDealer successfully !
+Thread:main  com.network.GlobalServlet[65] 2013-03-10 10:56:52 星期日 [INFO] dealer end
+Thread:main  javax.servlet.GenericServlet[212] 2013-03-10 10:56:52 星期日 [INFO] init successfully!
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:53 星期日 [INFO] Sun Mar 10 10:56:53 [initandlisten] MongoDB starting : pid=4220 port=27017 dbpath=H:\mongodb\data\ 64-bit host=zhangli-PC
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:53 星期日 [INFO] Sun Mar 10 10:56:53 [initandlisten] db version v2.2.1, pdfile version 4.5
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:53 星期日 [INFO] Sun Mar 10 10:56:53 [initandlisten] git version: d6764bf8dfe0685521b8bc7b98fd1fab8cfeb5ae
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:53 星期日 [INFO] Sun Mar 10 10:56:53 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:53 星期日 [INFO] Sun Mar 10 10:56:53 [initandlisten] options: { dbpath: "H:\mongodb\data\" }
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:53 星期日 [INFO] Sun Mar 10 10:56:53 [initandlisten] journal dir=H:/mongodb/data/journal
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:53 星期日 [INFO] Sun Mar 10 10:56:53 [initandlisten] recover : no journal files present, no recovery needed
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:55 星期日 [INFO] Sun Mar 10 10:56:55 [initandlisten] query network.system.namespaces query: { options.temp: { $in: [ true, 1 ] } } ntoreturn:0 ntoskip:0 nscanned:5 keyUpdates:0  nreturned:0 reslen:20 215ms
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:55 星期日 [INFO] Sun Mar 10 10:56:55 [initandlisten] waiting for connections on port 27017
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:56:55 星期日 [INFO] Sun Mar 10 10:56:55 [websvr] admin web console waiting for connections on port 28017
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 10:57:55 星期日 [INFO] Sun Mar 10 10:57:55 [PeriodicTask::Runner] task: WriteBackManager::cleaner took: 54ms
+Thread:http-8080-5  com.network.manage.dealer.DealerManager[249] 2013-03-10 11:04:53 星期日 [INFO] H:\graduation design\network\WebRoot\WEB-INF\static\js\thirdparty\ckeditor\skins\moono\icons.png
+Thread:http-8080-5  com.network.dealer.document.DocumentDealer[108] 2013-03-10 11:04:55 星期日 [INFO] {status:-1,msg:"请先登录！"}
+Thread:http-8080-5  com.network.dealer.user.UserDealer[103] 2013-03-10 11:06:14 星期日 [INFO] {status:0,msg:"请输入昵称"}
+Thread:Thread-2  java.lang.Thread[722] 2013-03-10 13:15:55 星期日 [INFO] Sun Mar 10 13:15:55 [PeriodicTask::Runner] task: WriteBackManager::cleaner took: 6ms
